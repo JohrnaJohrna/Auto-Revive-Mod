@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{820b6b01-698b-499c-bf54-c7260575b5e5}</ProjectGuid>
+    <RootNamespace>dinput8</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>dinput8.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>dinput8.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>dinput8.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>dinput8.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AboveShadow.cpp" />
+    <ClCompile Include="ActionFlag.cpp" />
+    <ClCompile Include="ActionRequest.cpp" />
+    <ClCompile Include="AI.cpp" />
+    <ClCompile Include="AutoHoming.cpp" />
+    <ClCompile Include="BehaviorData.cpp" />
+    <ClCompile Include="BehaviorSync.cpp" />
+    <ClCompile Include="BehScriptModule.cpp" />
+    <ClCompile Include="Behavior.cpp" />
+    <ClCompile Include="BoneMove.cpp" />
+    <ClCompile Include="ChrData.cpp" />
+    <ClCompile Include="ChrSpawner.cpp" />
+    <ClCompile Include="CHR_ASM_EDIT.cpp" />
+    <ClCompile Include="CHR_DBG.cpp" />
+    <ClCompile Include="CHR_INS.cpp" />
+    <ClCompile Include="CliffWind.cpp" />
+    <ClCompile Include="Damage.cpp" />
+    <ClCompile Include="dinput8.cpp" />
+    <ClCompile Include="Dripping.cpp" />
+    <ClCompile Include="EmevdCMD.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityModule.cpp" />
+    <ClCompile Include="EquipMagicData.cpp" />
+    <ClCompile Include="ChrEvent.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventCMD.cpp" />
+    <ClCompile Include="FaceData.cpp" />
+    <ClCompile Include="FALL.cpp" />
+    <ClCompile Include="GAME.cpp" />
+    <ClCompile Include="GameData.cpp" />
+    <ClCompile Include="GameData_LocalPlayer.cpp" />
+    <ClCompile Include="GestureEquipData.cpp" />
+    <ClCompile Include="GrassHit.cpp" />
+    <ClCompile Include="HitStop.cpp" />
+    <ClCompile Include="Knockback.cpp" />
+    <ClCompile Include="Ladder.cpp" />
+    <ClCompile Include="Magic.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Memory_S.cpp" />
+    <ClCompile Include="ModelParamModifier.cpp" />
+    <ClCompile Include="NaviMeshCostEffect.cpp" />
+    <ClCompile Include="Position.cpp" />
+    <ClCompile Include="Ride.cpp" />
+    <ClCompile Include="SFX.cpp" />
+    <ClCompile Include="SpEffect.cpp" />
+    <ClCompile Include="StatusResist.cpp" />
+    <ClCompile Include="SuperArmor.cpp" />
+    <ClCompile Include="SwordArts.cpp" />
+    <ClCompile Include="TAE.cpp" />
+    <ClCompile Include="Talk.cpp" />
+    <ClCompile Include="Throw.cpp" />
+    <ClCompile Include="Toughness.cpp" />
+    <ClCompile Include="UnkEquipData.cpp" />
+    <ClCompile Include="VFX.cpp" />
+    <ClCompile Include="Wetness.cpp" />
+    <ClCompile Include="WheelRotation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboveShadow.h" />
+    <ClInclude Include="ActionRequest.h" />
+    <ClInclude Include="AI.h" />
+    <ClInclude Include="AutoHoming.h" />
+    <ClInclude Include="BehaviorData.h" />
+    <ClInclude Include="BehaviorSync.h" />
+    <ClInclude Include="BehScriptModule.h" />
+    <ClInclude Include="BoneMove.h" />
+    <ClInclude Include="ChrData.h" />
+    <ClInclude Include="ChrSpawner.h" />
+    <ClInclude Include="CHR_DBG.h" />
+    <ClInclude Include="CHR_INS.h" />
+    <ClInclude Include="CliffWind.h" />
+    <ClInclude Include="Damage.h" />
+    <ClInclude Include="Dripping.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityModule.h" />
+    <ClInclude Include="ChrEvent.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventCMD.h" />
+    <ClInclude Include="FaceData.h" />
+    <ClInclude Include="FALL.h" />
+    <ClInclude Include="FunctionSignatures.h" />
+    <ClInclude Include="GAME.h" />
+    <ClInclude Include="ActionFlag.h" />
+    <ClInclude Include="Behavior.h" />
+    <ClInclude Include="GameData.h" />
+    <ClInclude Include="GameData_LocalPlayer.h" />
+    <ClInclude Include="GrassHit.h" />
+    <ClInclude Include="HitStop.h" />
+    <ClInclude Include="Knockback.h" />
+    <ClInclude Include="Ladder.h" />
+    <ClInclude Include="Magic.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="ModelParamModifier.h" />
+    <ClInclude Include="NaviMeshCostEffect.h" />
+    <ClInclude Include="Position.h" />
+    <ClInclude Include="Ride.h" />
+    <ClInclude Include="SFX.h" />
+    <ClInclude Include="SpEffect.h" />
+    <ClInclude Include="StatusResist.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Memory_S.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SuperArmor.h" />
+    <ClInclude Include="SwordArts.h" />
+    <ClInclude Include="TAE.h" />
+    <ClInclude Include="Talk.h" />
+    <ClInclude Include="Throw.h" />
+    <ClInclude Include="Toughness.h" />
+    <ClInclude Include="VFX.h" />
+    <ClInclude Include="Wetness.h" />
+    <ClInclude Include="WheelRotation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dinput8.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dinput8.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="dinput8_asm.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
