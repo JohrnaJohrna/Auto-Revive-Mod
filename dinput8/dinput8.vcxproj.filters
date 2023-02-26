@@ -13,231 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Исходные файлы\DEBUG">
-      <UniqueIdentifier>{bf1ab080-3896-4d1b-8b46-928f68ac7637}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME">
-      <UniqueIdentifier>{86924cb2-3fed-4aaf-a34f-21e878bd36a1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\SOUND">
-      <UniqueIdentifier>{ce49185b-315d-4f65-a851-962b2e6c90d9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\MENU">
-      <UniqueIdentifier>{38afdfba-682c-47d1-be56-01ce039e39f1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\CAMERA">
-      <UniqueIdentifier>{4ad1d594-369a-476f-9363-cd4c34ce7104}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\FILE/RESOURCE">
-      <UniqueIdentifier>{54badabf-536e-4b45-a5a0-369ff5bdb9f1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\SYSTEM">
-      <UniqueIdentifier>{065a9534-3611-4610-a956-65b030d0964b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\CHR_INS">
-      <UniqueIdentifier>{7110dd8c-b671-491e-a8b1-abb5dc6aba4e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule">
-      <UniqueIdentifier>{229eb67e-1560-461c-8593-d0256137f129}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules">
-      <UniqueIdentifier>{b7a63ccb-a57c-46f5-a0f6-762aa694e88c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH">
-      <UniqueIdentifier>{ef14eb14-d37b-4be1-ab58-a6829173bbea}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\CHR_INS\ExtraEntity">
-      <UniqueIdentifier>{13aecbb9-fefe-49b9-bcea-e8a789cdc6be}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\GameData">
-      <UniqueIdentifier>{5c3fb71b-fa7f-4807-92d0-04fefbb05609}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\GameData\GameDataHeader">
-      <UniqueIdentifier>{4b35b51f-d701-4eb3-af99-8dd31bfa1bae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\GameData\GameDataPlayer">
-      <UniqueIdentifier>{8beb3832-37f1-42ac-9249-e2658a3da93f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\GameData\GameDataPlayer\EquipGameData">
-      <UniqueIdentifier>{2767c9fb-fff7-43c9-b0c0-3b9c38f48340}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\Event">
-      <UniqueIdentifier>{240babb4-790a-46c0-bd23-c679a433e1e3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\Event\Event Commands">
-      <UniqueIdentifier>{7241f52c-17e9-4f57-97e7-4a4e53a5f6f6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\DEBUG\GAME\Event\EventRegionMan">
-      <UniqueIdentifier>{710888d6-f4a5-4d62-8463-4f21a1d16b5b}</UniqueIdentifier>
+    <Filter Include="Исходные файлы\NewFilter1">
+      <UniqueIdentifier>{0c036b53-c2f3-47d5-9879-9d78956289d5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dinput8.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Memory_S.cpp">
+    <ClCompile Include="x64mem.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="CHR_INS.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS</Filter>
+    <ClCompile Include="Auto-ReviveMod\Auto-Revive.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="CHR_DBG.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS</Filter>
-    </ClCompile>
-    <ClCompile Include="EntityModule.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule</Filter>
-    </ClCompile>
-    <ClCompile Include="ChrData.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="ActionFlag.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="BehScriptModule.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="TAE.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="StatusResist.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Behavior.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="BehaviorSync.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="AI.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="SuperArmor.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Toughness.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Talk.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="ChrEvent.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Magic.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Position.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="FALL.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Ladder.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="ActionRequest.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Throw.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="HitStop.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Damage.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Material.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Knockback.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="SFX.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="VFX.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="BehaviorData.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="ModelParamModifier.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Dripping.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Ride.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="BoneMove.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Wetness.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="AutoHoming.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="AboveShadow.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="SwordArts.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="GrassHit.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="WheelRotation.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="CliffWind.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="NaviMeshCostEffect.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Entity.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS</Filter>
-    </ClCompile>
-    <ClCompile Include="SpEffect.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\ExtraEntity</Filter>
-    </ClCompile>
-    <ClCompile Include="ChrSpawner.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS</Filter>
-    </ClCompile>
-    <ClCompile Include="GameData.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\GameData</Filter>
-    </ClCompile>
-    <ClCompile Include="GameData_LocalPlayer.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\GameData</Filter>
-    </ClCompile>
-    <ClCompile Include="CHR_ASM_EDIT.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\GameData\GameDataPlayer\EquipGameData</Filter>
-    </ClCompile>
-    <ClCompile Include="GestureEquipData.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\GameData\GameDataPlayer\EquipGameData</Filter>
-    </ClCompile>
-    <ClCompile Include="UnkEquipData.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\GameData\GameDataPlayer\EquipGameData</Filter>
-    </ClCompile>
-    <ClCompile Include="EquipMagicData.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\GameData\GameDataPlayer\EquipGameData</Filter>
-    </ClCompile>
-    <ClCompile Include="FaceData.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\GameData\GameDataPlayer</Filter>
-    </ClCompile>
-    <ClCompile Include="Event.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\Event</Filter>
-    </ClCompile>
-    <ClCompile Include="GAME.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME</Filter>
-    </ClCompile>
-    <ClCompile Include="EmevdCMD.cpp">
-      <Filter>Исходные файлы\DEBUG\GAME\Event\Event Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="EventCMD.cpp">
+    <ClCompile Include="Auto-ReviveMod\extern_c.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -248,158 +38,14 @@
     <ClInclude Include="resource.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Memory_S.h">
+    <ClInclude Include="x64mem.h">
       <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="CHR_INS.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS</Filter>
-    </ClInclude>
-    <ClInclude Include="CHR_DBG.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS</Filter>
-    </ClInclude>
-    <ClInclude Include="GAME.h">
-      <Filter>Исходные файлы\DEBUG\GAME</Filter>
-    </ClInclude>
-    <ClInclude Include="EntityModule.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule</Filter>
-    </ClInclude>
-    <ClInclude Include="ChrData.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="ActionFlag.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="BehScriptModule.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="TAE.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="StatusResist.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Behavior.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="BehaviorSync.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="AI.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="SuperArmor.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Toughness.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Talk.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="ChrEvent.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Magic.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Position.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="FALL.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Ladder.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="ActionRequest.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Throw.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="HitStop.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Damage.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Material.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Knockback.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="SFX.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="VFX.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="BehaviorData.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="ModelParamModifier.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Dripping.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Ride.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="BoneMove.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Wetness.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="AutoHoming.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="AboveShadow.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="SwordArts.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="GrassHit.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="WheelRotation.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="CliffWind.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="NaviMeshCostEffect.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\EntityModule\ModulesH</Filter>
-    </ClInclude>
-    <ClInclude Include="Entity.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS</Filter>
-    </ClInclude>
-    <ClInclude Include="SpEffect.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS\ExtraEntity</Filter>
     </ClInclude>
     <ClInclude Include="FunctionSignatures.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="ChrSpawner.h">
-      <Filter>Исходные файлы\DEBUG\GAME\CHR_INS</Filter>
-    </ClInclude>
-    <ClInclude Include="GameData.h">
-      <Filter>Исходные файлы\DEBUG\GAME\GameData\GameDataHeader</Filter>
-    </ClInclude>
-    <ClInclude Include="GameData_LocalPlayer.h">
-      <Filter>Исходные файлы\DEBUG\GAME\GameData\GameDataHeader</Filter>
-    </ClInclude>
-    <ClInclude Include="FaceData.h">
-      <Filter>Исходные файлы\DEBUG\GAME\GameData\GameDataPlayer</Filter>
-    </ClInclude>
-    <ClInclude Include="Event.h">
-      <Filter>Исходные файлы\DEBUG\GAME\Event</Filter>
-    </ClInclude>
-    <ClInclude Include="EventCMD.h">
-      <Filter>Исходные файлы\DEBUG\GAME\Event\Event Commands</Filter>
+    <ClInclude Include="Auto-ReviveMod\Auto-Revive.h">
+      <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -414,6 +60,21 @@
   </ItemGroup>
   <ItemGroup>
     <MASM Include="dinput8_asm.asm">
+      <Filter>Исходные файлы</Filter>
+    </MASM>
+    <MASM Include="asm_patches\DeathEvent_Player.asm">
+      <Filter>Исходные файлы</Filter>
+    </MASM>
+    <MASM Include="asm_patches\KillScored_Player.asm">
+      <Filter>Исходные файлы</Filter>
+    </MASM>
+    <MASM Include="asm_patches\HitDetection_BulletPc.asm">
+      <Filter>Исходные файлы</Filter>
+    </MASM>
+    <MASM Include="asm_patches\HitDetection_AttackPc.asm">
+      <Filter>Исходные файлы</Filter>
+    </MASM>
+    <MASM Include="asm_patches\KillDetection_Estus.asm">
       <Filter>Исходные файлы</Filter>
     </MASM>
   </ItemGroup>

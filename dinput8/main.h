@@ -6,5 +6,6 @@
 #include <list>
 #include <cmath>
 #include <string>
+#include "FunctionSignatures.h"
 
 using namespace std;

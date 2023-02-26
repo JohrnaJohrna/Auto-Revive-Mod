@@ -82,6 +82,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>C:\Program Files (x86)\Steam\steamapps\common\ELDEN RING\Game</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -138,6 +139,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <SupportJustMyCode>false</SupportJustMyCode>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -148,117 +150,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AboveShadow.cpp" />
-    <ClCompile Include="ActionFlag.cpp" />
-    <ClCompile Include="ActionRequest.cpp" />
-    <ClCompile Include="AI.cpp" />
-    <ClCompile Include="AutoHoming.cpp" />
-    <ClCompile Include="BehaviorData.cpp" />
-    <ClCompile Include="BehaviorSync.cpp" />
-    <ClCompile Include="BehScriptModule.cpp" />
-    <ClCompile Include="Behavior.cpp" />
-    <ClCompile Include="BoneMove.cpp" />
-    <ClCompile Include="ChrData.cpp" />
-    <ClCompile Include="ChrSpawner.cpp" />
-    <ClCompile Include="CHR_ASM_EDIT.cpp" />
-    <ClCompile Include="CHR_DBG.cpp" />
-    <ClCompile Include="CHR_INS.cpp" />
-    <ClCompile Include="CliffWind.cpp" />
-    <ClCompile Include="Damage.cpp" />
+    <ClCompile Include="Auto-ReviveMod\Auto-Revive.cpp" />
     <ClCompile Include="dinput8.cpp" />
-    <ClCompile Include="Dripping.cpp" />
-    <ClCompile Include="EmevdCMD.cpp" />
-    <ClCompile Include="Entity.cpp" />
-    <ClCompile Include="EntityModule.cpp" />
-    <ClCompile Include="EquipMagicData.cpp" />
-    <ClCompile Include="ChrEvent.cpp" />
-    <ClCompile Include="Event.cpp" />
-    <ClCompile Include="EventCMD.cpp" />
-    <ClCompile Include="FaceData.cpp" />
-    <ClCompile Include="FALL.cpp" />
-    <ClCompile Include="GAME.cpp" />
-    <ClCompile Include="GameData.cpp" />
-    <ClCompile Include="GameData_LocalPlayer.cpp" />
-    <ClCompile Include="GestureEquipData.cpp" />
-    <ClCompile Include="GrassHit.cpp" />
-    <ClCompile Include="HitStop.cpp" />
-    <ClCompile Include="Knockback.cpp" />
-    <ClCompile Include="Ladder.cpp" />
-    <ClCompile Include="Magic.cpp" />
-    <ClCompile Include="Material.cpp" />
-    <ClCompile Include="Memory_S.cpp" />
-    <ClCompile Include="ModelParamModifier.cpp" />
-    <ClCompile Include="NaviMeshCostEffect.cpp" />
-    <ClCompile Include="Position.cpp" />
-    <ClCompile Include="Ride.cpp" />
-    <ClCompile Include="SFX.cpp" />
-    <ClCompile Include="SpEffect.cpp" />
-    <ClCompile Include="StatusResist.cpp" />
-    <ClCompile Include="SuperArmor.cpp" />
-    <ClCompile Include="SwordArts.cpp" />
-    <ClCompile Include="TAE.cpp" />
-    <ClCompile Include="Talk.cpp" />
-    <ClCompile Include="Throw.cpp" />
-    <ClCompile Include="Toughness.cpp" />
-    <ClCompile Include="UnkEquipData.cpp" />
-    <ClCompile Include="VFX.cpp" />
-    <ClCompile Include="Wetness.cpp" />
-    <ClCompile Include="WheelRotation.cpp" />
+    <ClCompile Include="Auto-ReviveMod\extern_c.cpp" />
+    <ClCompile Include="x64mem.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AboveShadow.h" />
-    <ClInclude Include="ActionRequest.h" />
-    <ClInclude Include="AI.h" />
-    <ClInclude Include="AutoHoming.h" />
-    <ClInclude Include="BehaviorData.h" />
-    <ClInclude Include="BehaviorSync.h" />
-    <ClInclude Include="BehScriptModule.h" />
-    <ClInclude Include="BoneMove.h" />
-    <ClInclude Include="ChrData.h" />
-    <ClInclude Include="ChrSpawner.h" />
-    <ClInclude Include="CHR_DBG.h" />
-    <ClInclude Include="CHR_INS.h" />
-    <ClInclude Include="CliffWind.h" />
-    <ClInclude Include="Damage.h" />
-    <ClInclude Include="Dripping.h" />
-    <ClInclude Include="Entity.h" />
-    <ClInclude Include="EntityModule.h" />
-    <ClInclude Include="ChrEvent.h" />
-    <ClInclude Include="Event.h" />
-    <ClInclude Include="EventCMD.h" />
-    <ClInclude Include="FaceData.h" />
-    <ClInclude Include="FALL.h" />
+    <ClInclude Include="Auto-ReviveMod\Auto-Revive.h" />
     <ClInclude Include="FunctionSignatures.h" />
-    <ClInclude Include="GAME.h" />
-    <ClInclude Include="ActionFlag.h" />
-    <ClInclude Include="Behavior.h" />
-    <ClInclude Include="GameData.h" />
-    <ClInclude Include="GameData_LocalPlayer.h" />
-    <ClInclude Include="GrassHit.h" />
-    <ClInclude Include="HitStop.h" />
-    <ClInclude Include="Knockback.h" />
-    <ClInclude Include="Ladder.h" />
-    <ClInclude Include="Magic.h" />
-    <ClInclude Include="Material.h" />
-    <ClInclude Include="ModelParamModifier.h" />
-    <ClInclude Include="NaviMeshCostEffect.h" />
-    <ClInclude Include="Position.h" />
-    <ClInclude Include="Ride.h" />
-    <ClInclude Include="SFX.h" />
-    <ClInclude Include="SpEffect.h" />
-    <ClInclude Include="StatusResist.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="Memory_S.h" />
+    <ClInclude Include="x64mem.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="SuperArmor.h" />
-    <ClInclude Include="SwordArts.h" />
-    <ClInclude Include="TAE.h" />
-    <ClInclude Include="Talk.h" />
-    <ClInclude Include="Throw.h" />
-    <ClInclude Include="Toughness.h" />
-    <ClInclude Include="VFX.h" />
-    <ClInclude Include="Wetness.h" />
-    <ClInclude Include="WheelRotation.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dinput8.def" />
@@ -267,6 +169,11 @@
     <ResourceCompile Include="dinput8.rc" />
   </ItemGroup>
   <ItemGroup>
+    <MASM Include="asm_patches\DeathEvent_Player.asm" />
+    <MASM Include="asm_patches\HitDetection_AttackPc.asm" />
+    <MASM Include="asm_patches\HitDetection_BulletPc.asm" />
+    <MASM Include="asm_patches\KillDetection_Estus.asm" />
+    <MASM Include="asm_patches\KillScored_Player.asm" />
     <MASM Include="dinput8_asm.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

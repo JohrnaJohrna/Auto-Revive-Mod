@@ -1,4 +1,4 @@
-#include "GAME.h"
+#include "Auto-ReviveMod/Auto-Revive.h"
 
 HINSTANCE mHinst = 0, mHinstDLL = 0;
 
@@ -29,72 +29,19 @@ void Begin(HINSTANCE hinstDLL) {
 	for (int i = 0; i < 6; i++)
 		mProcs[i] = (uintptr_t)GetProcAddress(mHinstDLL, mImportNames[i]);
 
+	Auto_Revive_Main();
+	/*
 	AllocConsole();
 	FILE* f;
 	freopen_s(&f, "CONOUT$", "w", stdout);
 
-	Memory_S memory_s;
-
-	while (!GetAsyncKeyState(VK_END))
-	{
-
-		if (GetAsyncKeyState(VK_NUMPAD5))
-		{
-			CHR_INS chr_ins;
-			list<uintptr_t> myList = chr_ins.GetEntityList(chr_ins.LocalPlayer);
-
-			EntityINS* locPlayer = new EntityINS(myList.front());
-
-			locPlayer->_SpecialEffect->AddSpEffect(1697001);
-
-			delete locPlayer;
-
-			Sleep(500);
-		}
-		else if (GetAsyncKeyState(VK_NUMPAD3))
-		{
-			CHR_INS chr_ins;
-			list<uintptr_t> myList = chr_ins.GetEntityList(chr_ins.LocalPlayer);
-
-			EntityINS* locPlayer = new EntityINS(myList.front());
-
-			locPlayer->_SpecialEffect->DeleteSpEffect(1697001);
-
-			delete locPlayer;
-
-			Sleep(500);
-		}
-		else if (GetAsyncKeyState(VK_NUMPAD4))
-		{
-			CHR_INS chr_ins;
-
-			ChrSpawnerArgs Args;
-			Args.NpcParamID = 35100000;
-			Args.NpcThinkParamID = 35100000;
-
-			chr_ins._ChrSpawner->CreateCharacter(Args);
-
-			Sleep(500);
-		}
-		else if (GetAsyncKeyState(VK_NUMPAD2))
-		{
-			GAME* GAME_PTR_ = new GAME();
-
-			int AreaEntityId = 14000982;
-			GAME_PTR_->_Event->_EventCMD->WarpPlayer(14, 0, 0, 0, &AreaEntityId);
-
-			delete GAME_PTR_;
-
-			Sleep(500);
-		}
-
-	}
+	Auto_Revive_Main();
 
 	FreeConsole();
-
+	
 	if (GetAsyncKeyState(VK_END))
 		fclose(f);
-
+		*/
 	//FreeLibraryAndExitThread(hModule, 0);
 
 	return;
